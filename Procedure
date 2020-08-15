@@ -1,0 +1,9 @@
+JenkinsMasterSlaveArchitectureConfiguration1. Create two instances in AWS - Jenkins Master, Jenkins Node
+2. Set Up Key Sharing between Master and Slave for both to communicate
+3. Install Java in node - Jenkins is written in Java
+4. Configure the slave machine into the master from Jenkins master GUImanage Jenkins>Manage Nodes & Clouds>New Node
+The name specified in node must be specified in the pipeline code
+Add private IP of node and private key of master in manage nodes
+Add credential, then for kind add SSH username with private key
+Host key verification use non verifying strategy then save
+Launch the node to complete configuration
